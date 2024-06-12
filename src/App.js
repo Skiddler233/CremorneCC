@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header'
+import Main from './Components/Main/Main'
+import Rides from './Components/Rides/Rides'
+import Races from './Components/Races/Races'
+import Join from './Components/Join/Join';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+    <Header />
+    <Main id="home" />
+    <Rides id="group-rides" />
+    <Races id="races" />
+    <Join id="join-us" />
+  </div>
   );
 }
 

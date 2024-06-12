@@ -1,0 +1,15 @@
+.Races{
+    background-color: #fceccc;
+    font-weight: bold;
+    font-size: 30px;
+}
+.Races th{
+    background-color: orange;
+    font-size: 35px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.Races td{
+    font-size: 25px;
+    border: 3px solid black;
+}

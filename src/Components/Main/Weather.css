@@ -1,0 +1,14 @@
+.tomorrow{
+    padding: '22px';
+    position: 'relative'
+}
+a{
+    position: 'absolute';
+    bottom: 0; 
+    transform: 'translateX(-50%)';
+    left: '50%'
+}
+img{
+    width: "250";
+    height: "18"
+}

@@ -1,0 +1,48 @@
+/* styles.css */
+.carousel {
+    position: relative;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: auto;
+    overflow: hidden;
+
+    border-radius: 10px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; /* Ensure the items do not shrink */
+    width: 100%; /* Ensure each item takes up the full width of the carousel */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%; /* Ensure the images fit within the item */
+    height: auto; /* Maintain the aspect ratio of the images */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
