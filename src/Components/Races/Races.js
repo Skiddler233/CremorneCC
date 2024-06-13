@@ -1,10 +1,11 @@
 import React from "react";
 import './Races.css';
+import RaceHeading from '../../Assets/img/race-times.png';
 
 export default function Races(){
     return(
-        <div className="Races">
-            <img className="Heading" src="img/race-times.png" alt="Races" />
+        <div id='races'className="Races">
+            <img className="Heading" src={RaceHeading} alt="Races" />
             <br />
             <table className="RaceTable">
                 <tbody>

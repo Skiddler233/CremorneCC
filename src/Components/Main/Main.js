@@ -1,19 +1,23 @@
 import React from 'react'
 import './Main.css'
 import Weather from './Weather'
-import Carousel from '../Carousel/Carousel'
+import Carousel from '../Carousel/Carousel';
+import About from '../../Assets/img/about_us.png';
+import Rider from '../../Assets/img/rider.jpg';
+import Ebike from '../../Assets/img/ebike.jpg';
+import Gravel from '../../Assets/img/gravel-bike.jpg';
 
 
-export default function Main(){
+export default function Main() {
     const items = [
-        <img src='img/rider.jpg' />,
-        <img src='img/ebike.jpg' />,
-        <img src='img/gravel-bike.jpg' />
-    ]
+        <img src={Rider} alt='Rider'/>,
+        <img src={Ebike} alt='Rider with Ebikes'/>,
+        <img src={Gravel} alt='Gravel Bike'/>
+    ];
     return(
-        <div className='Main-Container'>
+        <div id="home" className='Main-Container'>
             <div className='Left-Space'>
-                <img className='Heading' src='img/about_us.png' />
+                <img className='Heading' src={About} alt='Heading Title'/>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel placerat leo. Aenean efficitur elit vitae tellus 
                 vulputate, vitae suscipit risus tincidunt. Donec tristique, quam vitae viverra pellentesque, augue dui iaculis ligula, non gravida massa dolor et diam. Duis sed mauris odio. 

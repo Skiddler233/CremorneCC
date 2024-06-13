@@ -1,6 +1,7 @@
 .JoinUs {
     background-color: #fceccc;
   }
+
   
   .form-container {
     display: flex;
@@ -25,6 +26,7 @@
   }
   
   .join-form input[type="text"], .join-form textarea {
+    background-color: white;
     padding: 8px;
     box-sizing: border-box;
     font-size: 16px;

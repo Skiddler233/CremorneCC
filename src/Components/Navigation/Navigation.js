@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Navigation.css';
+import MenuIcon from '../../Assets/img/menu.png';
+import Home from '../../Assets/img/home.png';
+import GroupRides from '../../Assets/img/group-rides.png';
+import RaceTimes from '../../Assets/img/race-times.png';
+import JoinUs from '../../Assets/img/join-us.png';
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,37 +19,43 @@ const Navigation = () => {
     return () => window.removeEventListener('click', handleClickOutside);
   }, [menuOpen]);
 
-function scrollToElement(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+  function scrollToElement(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 200; // Adjust this value as needed
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth'
+      });
+      setMenuOpen(false); // Close the menu after scrolling
+    }
   }
-}
 
   return (
     <div className="menu-container">
       <img
         className="menu-icon"
-        src="img/menu.png"
+        src={MenuIcon}
         alt="Menu Icon"
         onClick={() => setMenuOpen(!menuOpen)}
       />
-      <div className={`menu-dropdown ${menuOpen ? 'show' : ''}`} id="menuDropdown">
-        <div onClick={() => scrollToElement('home')}>
-          <img src="img/home.png" alt="Home" />
+      <div className={`menu-dropdown ${menuOpen ? 'show' : ''}`} data-testid="menu-dropdown">
+        <div onClick={() => {scrollToElement('home'); setMenuOpen(false);}}>
+          <img src={Home} alt="Home" />
         </div>
-        <div onClick={() => scrollToElement('group-rides')}>
-          <img src="img/group-rides.png" alt="Group rides text" />
+        <div onClick={() => {scrollToElement('group-rides'); setMenuOpen(false);}}>
+          <img src={GroupRides} alt="Group rides text" />
         </div>
-        <div onClick={() => scrollToElement('races')}>
-          <img src="img/race-times.png" alt="Race times text" />
+        <div onClick={() => {scrollToElement('races'); setMenuOpen(false);}}>
+          <img src={RaceTimes} alt="Race times text" />
         </div>
-        <div onClick={() => scrollToElement('join-us')}>
-          <img src="img/join-us.png" alt="Join us text" />
+        <div onClick={() => {scrollToElement('join-us'); setMenuOpen(false);}}>
+          <img src={JoinUs} alt="Join us text" />
         </div>
       </div>
     </div>
   );
-  };
+};
 
 export default Navigation;

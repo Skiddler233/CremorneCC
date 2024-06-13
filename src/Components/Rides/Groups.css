@@ -4,7 +4,7 @@
 table{
     width: 60%;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .Group-A{
@@ -24,4 +24,13 @@ table{
 }
 .Letters{
     height: 75px;
+}
+.A-Image{
+    background-color: #ffadad;
+}
+.B-Image{
+    background-color: #ffe89e;
+}
+.C-Image{
+    background-color: #87f757;
 }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Join.css';
+import JoinUs from '../../Assets/img/join-us.png';
+import AskUs from '../../Assets/img/ask-us.png';
 
 export default function JoinForm() {
   const [joinFormData, setJoinFormData] = useState({
@@ -35,6 +37,12 @@ export default function JoinForm() {
     const { name, address, email, suburb } = joinFormData;
     if (name && address && email && suburb) {
       alert(`Thank you for joining ${name}!\nYou will receive an email with more details.`);
+      setJoinFormData({
+        name: '',
+        address: '',
+        email: '',
+        suburb: ''
+      }); // Reset the join form fields
     } else {
       alert("Please fill out all fields in the form.\nSome items are missing!");
     }
@@ -44,18 +52,21 @@ export default function JoinForm() {
     const { name, email, question } = askFormData;
     if (name && email && question) {
       alert(`Thank you for your question ${name}!\nWe will get back to you at ${email}.`);
+      setAskFormData({
+        name: '',
+        email: '',
+        question: ''
+      }); // Reset the ask form fields
     } else {
       alert("Please fill out all fields in the form.\nSome items are missing!");
     }
   };
-
   return (
     <section id="join-us" className="JoinUs">
-      <div>
-        <img className="heading" src="img/join-us.png" alt="Join Us text" />
-      </div>
+  
       <div className="form-container">
         <div className="left-form">
+        <img className="heading" src={JoinUs} alt="Join Us text" />
           <div className="join-form">
             <label htmlFor="name">Full Name:</label>
             <input
@@ -101,6 +112,7 @@ export default function JoinForm() {
           </div>
         </div>
         <div className="right-form">
+        <img className="heading" src={AskUs} alt="Ask Us text" />
           <div className="join-form">
             <label htmlFor="ask-name">Full Name:</label>
             <input

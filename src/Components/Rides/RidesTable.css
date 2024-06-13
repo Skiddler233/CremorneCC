@@ -3,9 +3,6 @@ table {
     border-collapse: collapse;
     width: 100%;
     justify-content: center;
-    padding: ;
-
-
 }
 
 .RidesTable td, th{
@@ -22,5 +19,17 @@ table {
 
 .Coloured{
     background-color: #ad99ff;
+    font-weight: bold;
+}
+.Col-A{
+    background-color: #ffadad;
+    font-weight: bold;
+}
+.Col-B{
+    background-color: #ffe89e;
+    font-weight: bold;
+}   
+.Col-C{
+    background-color:  #87f757;
     font-weight: bold;
 }

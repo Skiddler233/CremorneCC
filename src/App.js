@@ -4,6 +4,7 @@ import Main from './Components/Main/Main'
 import Rides from './Components/Rides/Rides'
 import Races from './Components/Races/Races'
 import Join from './Components/Join/Join';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Rides id="group-rides" />
     <Races id="races" />
     <Join id="join-us" />
+    <Footer />
   </div>
   );
 }
