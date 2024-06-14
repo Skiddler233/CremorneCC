@@ -3,6 +3,7 @@ import './RidesTable.css';
 import RideTimes from '../../Assets/img/ride-times.png'
 
 export default function RidesTable() {
+  // Maps all the ride times to be configued into a table - Notice some are "N/A"
   const ridesData = [
     { day: "Monday", groupA: ["6:00 AM", "2:00 PM"], groupB: ["7:00 AM", "3:00 PM"], groupC: ["8:00 AM", "N/A"] },
     { day: "Tuesday", groupA: ["N/A", "1:00 PM"], groupB: ["7:00 AM", "N/A"], groupC: ["8:00 AM", "4:00 PM"] },
@@ -36,7 +37,7 @@ export default function RidesTable() {
           <td className="Col-C">Morning</td>
           <td className="Col-C">Afternoon</td>
         </tr>
-        {ridesData.map((ride, index) => (
+        {ridesData.map((ride, index) => ( // Configures the table based on the map above - Checks for 'N/A' and colours the Cell Red so it stands out
           <tr key={index}>
             <td className="Coloured">{ride.day}</td>
             {ride.groupA.map((time, idx) => (

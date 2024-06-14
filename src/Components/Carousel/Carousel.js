@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
-import './Carousel.css'; // Adjust the path as needed
+import './Carousel.css';
 
+// Function to display current index of Carousel Items
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Function mapped to the left (previous) arrow
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
 
+  // Function mapped to the right (next) arrow
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
-
+  // Export the container for the carousel and the buttons
   return (
     <div className="carousel">
       <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>

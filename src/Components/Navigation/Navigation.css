@@ -13,7 +13,7 @@
   display: none;
   position: absolute;
   width: 500px;
-  top: 50px; /* Adjust based on your layout */
+  top: 50px; 
   right: 100px;
   border: 3px solid black
 
@@ -29,7 +29,7 @@
 }
 
 .menu-dropdown img {
-  width: auto; /* Adjust based on your layout */
+  width: auto; 
   height: 75px;
 }
 @keyframes dropdownAnimation {

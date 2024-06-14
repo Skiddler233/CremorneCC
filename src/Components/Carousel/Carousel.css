@@ -1,8 +1,7 @@
-/* styles.css */
 .carousel {
     position: relative;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 800px; /* Adjust the maximum width as needed */
+    width: 80%; 
+    max-width: 800px;
     margin: auto;
     overflow: hidden;
 
@@ -16,7 +15,7 @@
   
   .carousel-item {
     flex: 0 0 auto; /* Ensure the items do not shrink */
-    width: 100%; /* Ensure each item takes up the full width of the carousel */
+    width: 100%; 
     box-sizing: border-box;
     padding: 20px;
     text-align: center;

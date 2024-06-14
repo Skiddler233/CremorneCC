@@ -1,3 +1,4 @@
+// Importing all Components
 import './App.css';
 import Header from './Components/Header/Header'
 import Main from './Components/Main/Main'
@@ -6,6 +7,7 @@ import Races from './Components/Races/Races'
 import Join from './Components/Join/Join';
 import Footer from './Components/Footer/Footer';
 
+// Default function to render all components
 function App() {
   return (
     <div>

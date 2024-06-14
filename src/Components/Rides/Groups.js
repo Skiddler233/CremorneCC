@@ -1,3 +1,4 @@
+// Import CSS and Images
 import React from 'react';
 import './Groups.css'
 import GroupsHeading from '../../Assets/img/groups.png';

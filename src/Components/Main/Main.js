@@ -1,3 +1,4 @@
+// import Images and CSS 
 import React from 'react'
 import './Main.css'
 import Weather from './Weather'
@@ -9,6 +10,7 @@ import Gravel from '../../Assets/img/gravel-bike.jpg';
 
 
 export default function Main() {
+    // Carousel Items - Images to be displayed
     const items = [
         <img src={Rider} alt='Rider'/>,
         <img src={Ebike} alt='Rider with Ebikes'/>,

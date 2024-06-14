@@ -6,6 +6,7 @@ import GroupRides from '../../Assets/img/group-rides.png';
 import RaceTimes from '../../Assets/img/race-times.png';
 import JoinUs from '../../Assets/img/join-us.png';
 
+// Function to Open the Navigation Menu when Logo is clicked
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,6 +20,7 @@ const Navigation = () => {
     return () => window.removeEventListener('click', handleClickOutside);
   }, [menuOpen]);
 
+  // Fucntion to scroll to the Element ID when the corresponding item is clicked
   function scrollToElement(id) {
     const element = document.getElementById(id);
     if (element) {

@@ -16,7 +16,7 @@ table {
 .TableHeader{
     height: 75px;
 }
-
+/* Table colouring*/
 .Coloured{
     background-color: #ad99ff;
     font-weight: bold;

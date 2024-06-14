@@ -1,3 +1,4 @@
+// Importing CSS and Images to be used in component
 import React from "react";
 import './Header.css';
 import Navigation from "../Navigation/Navigation";
@@ -7,6 +8,7 @@ import ridersMoving from '../../Assets/img/riders-moving.gif';
 import ridersMovingFlipped from '../../Assets/img/riders-moving-flipped.gif';
 import  "../Navigation/Navigation";
 
+// Function to scroll to Element 'ID' when clicked - Also found in Navigation/Navigation.js
 function scrollToElement(id) {
   const element = document.getElementById(id);
   if (element) {

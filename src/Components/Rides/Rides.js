@@ -4,6 +4,7 @@ import './Rides.css'
 import RidesTable from "./RidesTable";
 import GRides from '../../Assets/img/group-rides.png'
 
+// Main component for the "Group Rides" section. Pulls the component for the group types and the table for the ride times.
 export default function Rides(){
     return(
         <div id='group-rides' className="Rides">

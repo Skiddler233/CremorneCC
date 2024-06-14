@@ -1,6 +1,7 @@
 import React from 'react';
-import './Footer.css'; // Import your CSS file
+import './Footer.css'; 
 
+// Export a simple Header
 const Footer = () => {
   return (
     <footer className="footer">

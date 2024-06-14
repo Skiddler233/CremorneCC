@@ -6,28 +6,28 @@ p{
 
 .Main-Container {
   padding-top: 200px;
-  display: flex; /* Make the container a flexbox */
+  display: flex; 
   height: 50vh;
   width: 100%;
   background-color: #fceccc;
-  justify-content: space-between; /* Ensure there's space between the sections */
+  justify-content: space-between; 
 }
 
 .Left-Space, .Center-Space{
-  flex: 1.25; /* Allow each section to grow equally */
+  flex: 1.25; 
   height: 30vh;
   padding-top: 20px;
 }
 .Right-Space{
-    flex: 1; /* Allow each section to grow equally */
+    flex: 1;
     height: 30vh;
     padding: 40px;
 }
 
 .Right-Space {
-  display: flex; /* Make this a flexbox as well to align items inside */
-  align-items: center; /* Vertically center items */
-  justify-content: center; /* Horizontally center items */
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 .Heading{

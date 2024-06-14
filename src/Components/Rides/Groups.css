@@ -1,36 +1,41 @@
-.Groups{
-    background-color: #fceccc;
-}
 table{
     width: 60%;
     text-align: center;
     font-size: 30px;
 }
-
+/* Group-A,B,C display relevant colours based on Group type*/
 .Group-A{
     background-color: #ffadad;
     text-align: start;
 }
+
 .Group-B{
     background-color: #ffe89e;
     text-align: start;
 }
+
 .Group-C{
     background-color: #87f757;
     text-align: start;
 }
+
 .Groups-Header{
     height: 100px;
 }
+
 .Letters{
     height: 75px;
 }
+
+/* Background colour for the Group Symbols */
 .A-Image{
     background-color: #ffadad;
 }
+
 .B-Image{
     background-color: #ffe89e;
 }
+
 .C-Image{
     background-color: #87f757;
 }

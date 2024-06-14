@@ -3,6 +3,7 @@ import './Join.css';
 import JoinUs from '../../Assets/img/join-us.png';
 import AskUs from '../../Assets/img/ask-us.png';
 
+// Functions to handle the Form Data
 export default function JoinForm() {
   const [joinFormData, setJoinFormData] = useState({
     name: '',
@@ -32,10 +33,11 @@ export default function JoinForm() {
       [name]: value
     });
   };
-
+  
+  // Function to handle the Join Form Submit Event 
   const joinFormSubmit = () => {
     const { name, address, email, suburb } = joinFormData;
-    if (name && address && email && suburb) {
+    if (name && address && email && suburb) { // Check if Form Feilds are empty
       alert(`Thank you for joining ${name}!\nYou will receive an email with more details.`);
       setJoinFormData({
         name: '',
@@ -43,14 +45,15 @@ export default function JoinForm() {
         email: '',
         suburb: ''
       }); // Reset the join form fields
-    } else {
+    } else { 
       alert("Please fill out all fields in the form.\nSome items are missing!");
     }
   };
 
+  // Function to handle the Ask Form Submit Event 
   const askFormSubmit = () => {
     const { name, email, question } = askFormData;
-    if (name && email && question) {
+    if (name && email && question) { // Check if Form Feilds are empty
       alert(`Thank you for your question ${name}!\nWe will get back to you at ${email}.`);
       setAskFormData({
         name: '',
@@ -61,6 +64,7 @@ export default function JoinForm() {
       alert("Please fill out all fields in the form.\nSome items are missing!");
     }
   };
+  // Export both Forms
   return (
     <section id="join-us" className="JoinUs">
   

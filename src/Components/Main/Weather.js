@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './Weather.css'
 
+
+// Weather Widget from Tomorrow.io to display Cremorne weekly weather
 export default function WeatherWidget() {
   useEffect(() => {
     (function(d, s, id) {

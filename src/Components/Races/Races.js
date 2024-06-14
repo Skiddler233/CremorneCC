@@ -2,6 +2,7 @@ import React from "react";
 import './Races.css';
 import RaceHeading from '../../Assets/img/race-times.png';
 
+// Simple Table containing the Race Data - Wanted to make this pull from an XML file but concerned about time to deploy
 export default function Races(){
     return(
         <div id='races'className="Races">
