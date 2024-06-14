@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CremorneCC/static/css/main.5c1fb63e.css",
-    "main.js": "/CremorneCC/static/js/main.a617cc41.js",
+    "main.js": "/CremorneCC/static/js/main.d030c775.js",
     "static/js/453.a4465704.chunk.js": "/CremorneCC/static/js/453.a4465704.chunk.js",
     "static/media/riders-moving.gif": "/CremorneCC/static/media/riders-moving.6cdbbccbae8152a688fe.gif",
     "static/media/riders-moving-flipped.gif": "/CremorneCC/static/media/riders-moving-flipped.c4b724517e2b2d8e70fe.gif",
@@ -23,11 +23,11 @@
     "static/media/group-b.png": "/CremorneCC/static/media/group-b.3259008cfe04f51bd963.png",
     "index.html": "/CremorneCC/index.html",
     "main.5c1fb63e.css.map": "/CremorneCC/static/css/main.5c1fb63e.css.map",
-    "main.a617cc41.js.map": "/CremorneCC/static/js/main.a617cc41.js.map",
+    "main.d030c775.js.map": "/CremorneCC/static/js/main.d030c775.js.map",
     "453.a4465704.chunk.js.map": "/CremorneCC/static/js/453.a4465704.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c1fb63e.css",
-    "static/js/main.a617cc41.js"
+    "static/js/main.d030c775.js"
   ]
 }
