@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import Header from './Components/Header/Header';
-import Navigation from './Components/Navigation/Navigation';
 
 //Testing the Header Image and Logo are rendering Correctly
 test('Renders logo and header image', () => {
@@ -25,4 +24,5 @@ test('Clicking menu icon toggles Menu', () =>{
 
   expect(menuDropdown).toHaveClass('show');
 });
+
 

@@ -5,6 +5,19 @@ import head from '../../Assets/img/header.png';
 import logo from '../../Assets/img/logo.png';
 import ridersMoving from '../../Assets/img/riders-moving.gif';
 import ridersMovingFlipped from '../../Assets/img/riders-moving-flipped.gif';
+import  "../Navigation/Navigation";
+
+function scrollToElement(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    const offset = 200; 
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+}
 
 export default function Header() {
   return (
@@ -15,7 +28,7 @@ export default function Header() {
       <div>
         <img className="Moving-Riders" src={ridersMoving} alt='riders moving' />
       </div>
-      <div>
+      <div onClick={() => {scrollToElement('home')}}>
         <img className="Heading" src={head} alt='Header' />
       </div>
       <div>

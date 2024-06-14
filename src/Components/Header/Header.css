@@ -18,7 +18,9 @@
 .Heading {
   justify-self: center;
   display: flex;
+  cursor: pointer;
   justify-content: center;
+  padding-left: 20px;
 }
 
 .Moving-Riders {

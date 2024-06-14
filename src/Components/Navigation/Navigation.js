@@ -22,13 +22,13 @@ const Navigation = () => {
   function scrollToElement(id) {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 200; // Adjust this value as needed
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offset = 200; 
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: elementPosition - offset,
         behavior: 'smooth'
       });
-      setMenuOpen(false); // Close the menu after scrolling
+      setMenuOpen(false); 
     }
   }
 

@@ -1,6 +1,7 @@
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+    padding-left: 20px;
 }
 
 .Main-Container {
@@ -15,7 +16,7 @@ p{
 .Left-Space, .Center-Space{
   flex: 1.25; /* Allow each section to grow equally */
   height: 30vh;
-  padding: 40px;
+  padding-top: 20px;
 }
 .Right-Space{
     flex: 1; /* Allow each section to grow equally */
@@ -28,8 +29,6 @@ p{
   align-items: center; /* Vertically center items */
   justify-content: center; /* Horizontally center items */
 }
-
-  
 
 .Heading{
     display: flex;
