@@ -2,12 +2,13 @@
     background-color: #fceccc;
     font-weight: bold;
     font-size: 30px;
+
 }
 .Races th{
     background-color: orange;
     font-size: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .Races td{
     font-size: 30px;

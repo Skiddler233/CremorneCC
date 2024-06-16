@@ -11,7 +11,7 @@
 }
 
 .Logo {
-  width: 150px;
+  width: 100px;
   justify-self: start;
 }
 
@@ -21,8 +21,9 @@
   cursor: pointer;
   justify-content: center;
   padding-left: 20px;
+
 }
 
 .Moving-Riders {
-  height: 200px;
+  height: 150px;
 }
