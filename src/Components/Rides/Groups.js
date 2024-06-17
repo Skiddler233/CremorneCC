@@ -12,7 +12,7 @@ import Coffee from '../../Assets/img/coffee.png';
 export default function Groups() {
   return (
     <div className='Groups'>
-    <table >
+    <table className='GroupTable'>
       <tbody>
         <tr>
           <td colSpan={6}>

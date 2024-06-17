@@ -21,9 +21,15 @@
   cursor: pointer;
   justify-content: center;
   padding-left: 20px;
-
 }
 
 .Moving-Riders {
   height: 150px;
+}
+
+
+@media (max-width: 68px) {
+  .Heading {
+    display: none;
+  }
 }

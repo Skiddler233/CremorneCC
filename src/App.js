@@ -8,7 +8,6 @@ import Join from './Components/Join/Join';
 import Footer from './Components/Footer/Footer';
 
 
-alert("Please set the browser's zoom to 50% or 67% Dynamic sizing is a work in progress")
 
 // Default function to render all components
 function App() {

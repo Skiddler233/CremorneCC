@@ -1,19 +1,47 @@
-.Races{
+.Races {
     background-color: #fceccc;
     font-weight: bold;
-    font-size: 30px;
-
-}
-.Races th{
+    font-size: 1.5em; /* Use relative units for font size */
+    padding: 20px; /* Add some padding around the container */
+  }
+  
+  .race-table-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+  }
+  
+  .RaceTable {
+    width: 100%;
+    max-width: 1200px; /* Maximum width of the table */
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .Races th {
     background-color: orange;
-    font-size: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.Races td{
-    font-size: 30px;
+    font-size: 2em; /* Use relative units for font size */
+    padding: 10px; /* Use smaller padding */
+  }
+  
+  .Races td {
+    font-size: 1.5em; /* Use relative units for font size */
     border: 3px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
+    padding: 10px; /* Adjust padding */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Races th, .Races td {
+      font-size: 1.2em; /* Adjust font size for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .Races th, .Races td {
+      font-size: 1em; /* Further adjust font size for very small screens */
+      padding: 2px; /* Further adjust padding */
+    }
+  }
+  
